@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Turisticki portal</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
+        <style>
+            /* Make the image fully responsive */
+            .carousel-inner img {
+                width: 100%;
+                height: 100%;
+
+            }
+        </style>
+    </h:head>
+    <!--    <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#myModal">
+            Open modal
+        </button>-->
+    <h:body>
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Vesti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Desavanja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Oglasi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-auto order-0">
+                    <a class="navbar-brand mx-auto" href="#" >Turisticka Organizacija</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal2">Registracija</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ul>
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="resources/images/001.jpg" alt="img" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="resources/images/002.jpg" alt="img" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="resources/images/003.jpg" alt="img"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="resources/images/004.jpg" alt="img" />
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 mt-2 mb-2">
+                    <section class="banner-sec">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card"> <img class="img-fluid" src="resources/images/008.jpg" alt=""/>
+                                        <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">Aktuelno</span> </div>
+                                        <div class="card-body">
+                                            <div class="news-title">
+                                                <h5 class=" title-small"><a href="#">Srpsko kulturno i istorijsko nasleđe na Kosovu i Metohiji!</a></h5>
+                                            </div>
+                                            <p class="card-text"><small class="text-time"><em>3 mins ago</em></small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card"> <img class="img-fluid" src="resources/images/007.jpg" alt=""/>
+                                        <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">Aktuelno</span> </div>
+                                        <div class="card-body">
+                                            <div class="news-title">
+                                                <h5 class=" title-small"><a href="#">Lepenski vir, najstarije urbano naselje u Evropi!</a></h5>
+                                            </div>
+                                            <p class="card-text"><small class="text-time"><em>3 mins ago</em></small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card">
+
+                                        <img class="img-fluid" src="resources/images/005.jpg" alt=""/>
+                                        <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">Kultura</span> </div>
+                                        <div class="card-body">
+                                            <div class="news-title">
+                                                <h5 class=" title-small"><a href="#">Vojin Ćetković dobio nagradu "Raša Plaović"</a></h5>
+                                            </div>
+                                            <p class="card-text"><small class="text-time"><em>3 mins ago</em></small></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card"> <img class="img-fluid" src="resources/images/006.jpg" alt=""/>
+                                        <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">Desavanja</span> </div>
+                                        <div class="card-body">
+                                            <div class="news-title">
+                                                <h5 class=" title-small"><a href="#">Pocinje 55. Zupska berba u Aleksandrovcu</a></h5>
+                                            </div>
+                                            <p class="card-text"><small class="text-time"><em>3 mins ago</em></small></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <div class="col-sm-3 mt-2">
+                    <div class="card card-dark text-center">
+                        <div class="card-header">
+                            <h5 class="card-header"><span class="fa fa-line-chart"></span> Kako vam se svidja nas sajt?</h5>
+                        </div>
+                        <div class="card-block ">
+                            <p:selectOneRadio id="city2" value="" layout="responsive" columns="1">
+                                <f:selectItem itemLabel="Super" itemValue="Super" />
+                                <f:selectItem itemLabel="Vrh" itemValue="Vrh" />
+                                <f:selectItem itemLabel="Odlicno" itemValue="Odlicno" />
+                            </p:selectOneRadio>
+                        </div>
+                        <div class="card-footer text-xs-center">
+                            <button type="button" class="btn btn-dark btn-block btn-sm">
+                                Glasaj</button>
+                            <a href="#" class="small">View Result</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form class="form-horizontal" role="form" method="POST" action="/login">
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                        <div class="form-group has-danger">
+                                            <label class="sr-only" for="email">E-Mail Address</label>
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                                                <input type="text" name="username" class="form-control" id="username"
+                                                       placeholder="Username" required="true" autofocus="true"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="password">Password</label>
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                                                <input type="password" name="password" class="form-control" id="password"
+                                                       placeholder="Password" required="true"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6" style="padding-top: .35rem">
+                                        <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" name="remember"
+                                                       type="checkbox" />
+                                                <span style="padding-bottom: .15rem">Remember me</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-top: 1rem">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-success"><i class="fa fa-sign-in"></i> Login</button>
+                                        <a class="btn btn-link" href="/password/reset">Forgot Your Password?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Registracija</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="container">
+                        <h1>FORMULAR ZA REGISTRACIJU</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    </h:body>
+</html>
+
